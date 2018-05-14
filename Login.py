@@ -1,3 +1,5 @@
+#  Base on: https://stackoverflow.com/questions/29733636/python-webdriver-attributeerror-loginpage-instance-has-no-attribute-driver
+
 from Locators import Locator
 
 #class LoginPage():
