@@ -2,15 +2,14 @@
 
 from Locators import Locator
 
-#class LoginPage():
-    #zaloguj = '/html/body/header/div/div/div/div/nav/ul/li[2]/a'
 
 class Start(Locator):
 
     def __init__(self, driver):
         self.driver = driver
         self.zalogujElement = self.driver.find_element_by_xpath(self.zaloguj)
+        self.terazwtvElement = self.driver.find_element_by_css_selector(self.terazwtv)
 
-
-    def userLogin_valid(self):
+    def zalogujClick(self):
         self.zalogujElement.click()
+        self.terazwtvElement.click()
